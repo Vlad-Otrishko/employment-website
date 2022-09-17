@@ -1,0 +1,46 @@
+:root {
+  // Font family
+  --main-font-family: 'Noto Sans', sans-serif;
+  // Font sizes
+  --main-font-rubber:calc(16/320*100vw);
+  --main-font-mobile: 16px;
+  --secondary-font-mobile: 14px;
+  --main-font-desktop:20px;
+  // --list-font-mobile: 17px;
+  --menu-font-desktop: 18px;
+  --remark-font-mobile: 12px;
+  --remark-font-desktop: 14px;
+  --title-font-mobile: 24px;
+  --title-font-desktop: 36px;
+  --title-hero-font-mobile: 26px;
+  --title-hero-font-desktop: 38px;
+  // Font weights
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  // Colors
+  --main-font-color: #272727;
+  --white-color: #FFFFFF;
+  --yellow-color: #FFDB48;
+  --yellow-transparent-color:#ffdb4840;
+  --blue-color: #0260E8;
+  --green-color: #41B619;
+  --green-accent-color: #269001;
+  --light-grey-color:#DEDEDE;
+  --lightest-grey-color: #FAFAFA;
+
+  --shadow:0px 16px 80px rgba(0, 0, 0, 0.07), 0px 6.68442px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 3.57381px 17.869px rgba(0, 0, 0, 0.0417275), 0px 2.00345px 10.0172px rgba(0, 0, 0, 0.035), 0px 1.06402px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 0.442761px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+
+@media screen and (max-width:319px){
+  :root{
+    // Font sizes
+      --main-font-mobile: calc(16/320*100vw);
+      --secondary-font-mobile: calc(14/320*100vw);
+      --remark-font-mobile: calc(12/320*100vw);
+      --remark-font-desktop: calc(14/320*100vw);
+      --title-font-mobile: calc(24/320*100vw);
+      --title-hero-font-mobile: calc(26/320*100vw);
+      --menu-font-desktop: calc(18/320*100vw);
+    }
+}

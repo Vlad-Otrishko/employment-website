@@ -1,0 +1,238 @@
+    .hero{
+        padding-top:30px;
+        padding-bottom:40px;
+    }
+    .overlay{
+        position: absolute;
+        z-index: -1;
+        bottom:134px;
+        width: 100%;
+        height:382px;
+        background-image: -webkit-image-set(
+        url('../images/hero_picture/mobile_3x.webp') 3x,
+        url('../images/hero_picture/mobile_2x.webp') 2x,
+        url('../images/hero_picture/mobile.webp') 1x,
+        url('../images/hero_picture/mobile_3x.jpg') 3x,
+        url('../images/hero_picture/mobile_2x.jpg') 2x,
+        url('../images/hero_picture/mobile.jpg') 1x
+        );
+    background-image: image-set(
+        url('../images/hero_picture/mobile_3x.webp') type("image/webp") 3x,
+        url('../images/hero_picture/mobile_2x.webp') type("image/webp") 2x,
+        url('../images/hero_picture/mobile.webp') type("image/webp") 1x,
+        url('../images/hero_picture/mobile_3x.jpg') 3x,
+        url('../images/hero_picture/mobile_2x.jpg') 2x,
+        url('../images/hero_picture/mobile.jpg') 1x);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .hero-container {
+        position: relative;
+    }
+    .hero-title {
+        font-weight: var(--font-weight-bold);
+        line-height: 120%;
+    }
+    .hero-text {
+        line-height: 155%;
+        text-align: justify;
+    }
+    .advantages {
+        line-height: 155%;
+        list-style-type: none;
+    }
+    .advantage {
+        padding-left: 32px;
+        background-repeat: no-repeat;
+        background-size: 22px 22px;
+        background-position: 0 0;
+
+        &-one {
+            background-image: url('../images/list_markers/adv1.svg');
+        }
+
+        &-two {
+            background-image: url('../images/list_markers/adv2.svg');
+        }
+
+        &-three {
+            background-image: url('../images/list_markers/adv3.svg');
+        }
+
+        &-four {
+            background-image: url('../images/list_markers/adv4.svg');
+        }
+    }
+    .motivation {
+        display:block;
+        font-weight: var(--font-weight-semibold);
+        font-size:var(--secondary-font-mobile);
+        line-height: 155%;
+        text-align: justify;
+    }
+    .text-regular {
+        font-weight: var(--font-weight-regular);
+    }
+    .hero-button {
+        border-radius: 100px;
+    }
+
+    @media screen and (max-width:319px){
+    .hero {
+            padding-top: calc(30 / 320 * 100vw);
+            padding-bottom: calc(40/320*100vW);
+        }
+        .overlay {
+            bottom: calc(134/320*100vW);
+            height: calc(382/320*100vw);
+        }
+        .hero-text {
+            margin-top: calc(15/320*100vw);
+        }
+        .advantages {
+            margin-top: calc(40/320*100vw);
+        }
+
+        .advantage {
+            padding-left: calc(32/320*100vw);
+            background-size: calc(22/320*100vw) calc(22/320*100vw);
+        }
+        .advantage:not(:first-child) {
+            margin-top: calc(10/320*100vw);
+        }
+        .motivation {
+            margin-top: calc(123/320*100vw);
+        }
+    
+        .hero-button {
+            margin-top: calc(10/320*100vw);
+            height: calc(70/320*100vw);
+            border-radius: calc(100/320*100vw);
+        }
+    }
+
+    
+    @media screen and (max-width:1919px) {
+    .hero-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    @media screen and (min-width:320px) and (max-width:1919px){
+    .hero-title{
+        max-width:280px;
+        font-size: var(--title-hero-font-mobile);
+    }
+    .hero-text{
+        margin-top:15px;
+        max-width: 292px;
+    }
+    .advantages{
+        margin-top:40px;
+        max-width:276px;
+        font-size: var(--secondary-font-mobile);
+    }
+    .advantage{
+        &:not(:first-child){
+        margin-top: 10px;
+        }
+        
+        &-one{
+            max-width: 201px;
+        }
+        &-two{
+            max-width:276px;
+        }
+        &-three {
+            max-width: 201px;
+        }        
+        &-four {
+            max-width:223px;
+        }
+    }
+    .motivation{
+        margin-top:123px;
+    }
+    .hero-button{
+        margin-top:10px;
+        width:100%;
+        height:70px;
+        }
+} 
+@media screen and (min-width:1920px) {
+    .hero {
+            padding-top: 46px;
+        }
+    .overlay {
+        bottom: -40px;
+        left:740px;
+        width: 1180px;
+        height: 752px;
+        background-image: -webkit-image-set(
+            url('../images/hero_picture/desktop_3x.webp') 3x,
+            url('../images/hero_picture/desktop_2x.webp') 2x,
+            url('../images/hero_picture/desktop.webp') 1x,
+            url('../images/hero_picture/desktop_3x.jpg') 3x,
+            url('../images/hero_picture/desktop_2x.jpg') 2x,
+            url('../images/hero_picture/desktop.jpg') 1x);
+        background-image: image-set(
+            url('../images/hero_picture/desktop_3x.webp') type("image/webp") 3x,
+            url('../images/hero_picture/desktop_2x.webp') type("image/webp") 2x,
+            url('../images/hero_picture/desktop.webp') type("image/webp") 1x,
+            url('../images/hero_picture/desktop_3x.jpg') 3x,
+            url('../images/hero_picture/desktop_2x.jpg') 2x,
+            url('../images/hero_picture/desktop.jpg') 1x);
+        background-repeat: no-repeat;
+    }
+    .hero-container {
+            display: block;
+        }
+    .hero-title {
+        max-width: 802px;
+        font-size:var(--title-hero-font-desktop);
+        } 
+    .hero-text {
+        margin-top: 20px;
+        max-width: 500px;
+        font-size: var(--main-font-desktop);
+        }
+    .advantages {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        max-width: 521px;
+        max-height:108px;
+        font-size: var(--secondary-font-mobile);
+    }
+        .advantage {
+        &:nth-child(2n) {
+            margin-top: 20px;
+        }
+            &-one {
+                max-width: 200px;
+            }
+            &-two {
+                max-width: 276px;
+            }
+            &-three {
+                max-width: 202px;
+            }
+            &-four {
+                max-width: 223px;
+            }
+        }
+    .motivation {
+        margin-left: 44px;
+        margin-top:85px;
+        width: 345px;
+    }
+    .hero-button {
+        margin-top: 15px;
+        width: 427px;
+        height: 75px;
+
+    }
+}

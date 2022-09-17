@@ -1,0 +1,106 @@
+.qwiz-navigation {
+    position: relative;
+    margin-top: 30px;
+}
+.qwiz-main-button,
+.qwiz-return-button {
+    width: 240px;
+    height: 60px;
+}
+
+
+.qwiz-main-button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.qwiz-return-button {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    border: 2px solid var(--green-color);
+    &:hover{
+        background-color: ghostwhite;
+        border-color: goldenrod;
+    }
+}
+
+.qwiz-return-button .button-text {
+    color: var(--main-font-color);
+}
+
+// related to QWIZ1
+.qwiz-start .qwiz-return-button {
+    display:none;
+}
+
+.warning-message {
+    position: absolute;
+    bottom: -250px;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 10px;
+    visibility:visible;
+    opacity:1;
+    background-color: #f8f8ff;
+    font-style: italic; 
+    text-align:center;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    transition: opacity 1000ms linear, visibility 0s;
+}
+.warning-message.is-hidden{
+        opacity:0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 1000ms linear, visibility 0s 1000ms;
+    }
+@media screen and(max-width:1919px) {
+    .qwiz-main-button {
+        margin-top: 20px;
+    }
+    .qwiz-start .qwiz-main-button{
+        margin-top: 0px;    }
+}
+
+@media screen and (max-width:319px){
+
+.qwiz-navigation {
+        margin-top: calc(30/320*100vw);
+    }
+
+    .qwiz-main-button, .qwiz-rerturn-button {
+        width: (75vW);
+        height:calc(60/320*100vw);
+        margin-top: calc(20/320*100vw);
+    }
+
+    .qwiz-return-button {
+        width: (75vW);
+        height: calc(60/320*100vw);
+    }
+
+}
+
+@media screen and (min-width:1920px) {
+.qwiz-main-button,
+.qwiz-return-button {
+        height: 75px;
+    }
+// related to QUIZ1(starting form)
+.qwiz-start .qwiz-navigation {
+    margin-top: 60px;
+}
+.qwiz-navigation {
+    display: flex;
+    margin-top: 200px;
+    padding-left: 592px;
+    padding-right: 58px;
+}
+.qwiz-start .qwiz-navigation {
+    margin-top: 60px;
+    padding-left: 862px;
+    padding-right:6px;
+}
+
+}

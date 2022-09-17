@@ -1,0 +1,39 @@
+      <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="data:,"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+  </head>
+<body>
+
+      <section class="qwiz qwiz2">
+          <div class="container">
+        <include src="./partials/components/qwiz-form-heading.html"></include>
+        <form action="qwiz3.html" class="qwiz-form experience-form">
+                    <h3 class="title qwiz-form-title">Сколько лет опыта?</h3>
+        <p class="qwiz-form-text">в выбранной ранее специализации</p>
+        <ul class="reset-list qwiz-form-list">
+            <li class="qwiz-option"><input type="radio" id="experience-radio1" name="experience" value="До 1 года" class="qwiz-option-selector" required ><label for="experience-radio1" class="qwiz-option-label">До 1 года</label></li>
+            <li class="qwiz-option"><input type="radio" id="experience-radio2" name="experience" value="От 2 до 3 лет" class="qwiz-option-selector" ><label for="experience-radio2" class="qwiz-option-label">От 2 до 3 лет</label></li>
+            <li class="qwiz-option"><input type="radio" id="experience-radio3" name="experience" value="От 3 лет и более" class="qwiz-option-selector" ><label for="experience-radio3" class="qwiz-option-label">От 3 лет и более</label></li>
+        </ul>
+        <include src="./partials/components/qwiz-navigation.html"></include>
+      </form>
+
+        </div>
+      </section>
+    </body>

@@ -1,0 +1,173 @@
+.contact-form{
+    margin-top:30px;
+   
+    .input-label{
+        display: inline-block;
+        line-height:155%;
+    }
+    .input{
+        margin-top: 18px;
+        padding-top:21px;
+        padding-bottom:21px;
+        padding-left:20px;
+        padding-right:20px;
+        width:100%;
+        max-height:60px;
+        border: 1px solid var(--green-color);
+        border-radius: 10px;
+        &::placeholder{
+        font-size: var(--main-font-mobile);
+        }
+    }
+    .form-button{
+        width:100%;
+    }
+    .personal-data-remark {
+        margin-top: 10px;
+    }
+    .personal-data-remark{
+        font-size: var(--remark-font-mobile);
+        line-height: 120%;
+        text-align: center;
+    }
+    .privacy-policy-link{
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    .contact-form {
+        .input-wrapper:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+
+    .form-bottom-elements-wrapper {
+        margin-top: 30px;
+    }
+        // this pattern is used in QWIZ4, ONLINE-QUESTIONS, COMPANY-DETAILS sections :
+
+    .qwiz4 .input-wrapper,
+    .online-questions .input-wrapper,
+    .company-details .input-wrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .qwiz4 .button-wrapper, .online-questions .button-wrapper, .company-details .button-wrapper  {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+        .qwiz4 .form-bottom-elements-wrapper,
+        .online-questions .form-bottom-elements-wrapper,
+        .company-details .form-bottom-elements-wrapper {
+        padding-left:5px;
+        padding-right:5px;
+    }
+}
+
+@media screen and(max-width:319px){
+.contact-form {
+        margin-top: calc(30/320*100vw);
+
+        .input-wrapper:not(:first-child) {
+                margin-top: calc(30/320*100vw);
+            }
+        .input {
+            margin-top: calc(18/320*100vw);
+            padding-top: calc(21/320*100vw);
+            padding-bottom: calc(21/320*100vw);
+            padding-left: calc(20/320*100vw);
+            padding-right: calc(20/320*100vw);
+            max-height: calc(60/320*100vw);
+            border-radius: calc(10/320*100vw);
+        }
+ 
+        .form-bottom-elements-wrapper {
+            margin-top: calc(30/320*100vw);
+        }
+        // .button-wrapper {
+        //     margin-top: calc(30/320*100vw);
+        //     padding-right: calc(10/320*100vw);
+        //     padding-left: calc(10/320*100vw);
+        // }
+        .personal-data-remark {
+            margin-top: calc(10/320*100vw);
+        }
+    }
+    // this pattern is used in QWIZ4, ONLINE-QUESTIONS, COMPANY-DETAILS sections :
+
+    .qwiz4 .input-wrapper,
+    .online-questions .input-wrapper,
+    .company-details .input-wrapper {
+        padding-left: calc(10/320*100vw);
+        padding-right: calc(10/320*100vw);
+    }
+
+    .qwiz4 .button-wrapper,
+    .online-questions .button-wrapper,
+    .company-details .button-wrapper {
+        padding-right: calc(5/320*100vw);
+        padding-left: calc(5/320*100vw);
+    }
+
+    .qwiz4 .form-bottom-elements-wrapper,
+    .online-questions .form-bottom-elements-wrapper,
+    .company-details .form-bottom-elements-wrapper {
+        padding-left: calc(5/320*100vw);
+        padding-right: calc(5/320*100vw);
+    }
+}
+
+
+
+@media screen and (min-width: 1920px) {
+.contact-form {
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+        .input-wrapper {
+                margin-right:45px;
+                flex-basis:calc((100% - 394px - 90px)/2);
+            }
+        .input-label {
+            font-size:var(--menu-font-desktop);
+            }
+        .input {
+            margin-top: 15px;
+            padding-bottom:27px;
+            padding-top:28px;
+            max-height:75px;
+            &::placeholder{
+                font-size: var(--menu-font-desktop);
+            }
+        }
+
+        .form-bottom-elements-wrapper {
+            padding-top: 43px;
+            flex-basis:394px;
+        }
+        .form-button {
+            height:75px;
+        }
+        .personal-data-remark {
+            font-size: var(--remark-font-desktop);
+        }
+}
+    .online-questions, .company-details{
+    & .input-wrapper{
+            margin:0;
+            padding-left: 83px;
+            padding-right: 83px;
+                &:not(:first-child) {
+                        margin-top: 20px;
+                    }
+        }
+    & .form-bottom-elements-wrapper {
+        padding-left: 83px;
+        padding-right: 83px;
+    }
+}
+    .qwiz4 .form-bottom-elements-wrapper {
+        width: 397px;
+    }
+}

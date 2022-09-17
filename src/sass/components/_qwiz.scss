@@ -1,0 +1,318 @@
+.qwiz{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.qwiz-start-underlay {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -10;
+    width: 100%;
+    background-color: var(--lightest-grey-color);
+    background-image: radial-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.qwiz-form {
+    margin-top: 30px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    border-radius:10px;
+    box-shadow:var(--shadow);
+}
+
+.qwiz-form-title {
+    text-align: center;
+}
+
+.qwiz-form-text {
+    margin-top: 15px;
+    text-align: center;
+}
+// related to QWIZ1: 
+.qwiz-start {
+    position: relative;
+}
+.profession-select-form {
+    padding-bottom: 40px;
+}
+
+.qwiz .profession {
+    display: flex;
+    margin-left: 22px;
+    flex-basis: calc((100% - 44px)/2);
+}
+
+
+// related to QWIZ2,QWIZ3
+
+.qwiz-form-list {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.qwiz-option {
+    display:flex;
+    align-items:center;
+}
+
+.qwiz-option-selector {
+    width: 0px;
+    height:0px;
+    padding:0;
+    margin:0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+.qwiz-option-label {
+    position:relative;
+    padding-left:30px;
+    &::after {
+    display: block;
+    position:absolute;
+    left:2px;
+    top:2px;
+    content:"";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    transition:  transform 250ms linear;
+    }
+    &::before{
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--light-grey-color);
+    transition: background-color 500ms linear;
+    }
+}
+.qwiz-option-selector:hover+.qwiz-option-label::before,
+.qwiz-option-selector:checked+.qwiz-option-label::before {
+    background-color:var(--yellow-color);
+    }
+
+.qwiz-option-selector:checked+.qwiz-option-label::after {
+    transform: scale(0.5);
+}
+// related to QWIZ4
+.qwiz4 .qwiz-form{
+padding-left:5px;
+padding-right:5px;
+padding-bottom:40px;
+}
+
+@media screen and (max-width:1919px) {
+    .qwiz-start-underlay {
+        top: -130px;
+        max-width: 320px;
+        height: calc(100% + 130px);
+    }
+
+    .qwiz-option {
+        margin-top: 10px;
+    }
+    .qwiz .prof-list {
+        margin-left: -22px;
+        padding-left: 8px;
+    }
+    .qwiz-start .qwiz-option-label::before {
+        align-self: auto;
+    }
+}
+
+@media screen and (max-width:319px) {
+.qwiz {
+        padding-top: calc(40/320*100vw);
+        padding-bottom: calc(40/320*100vw);
+    }
+
+    .qwiz-form {
+        margin-top: calc(30/320*100vw);
+        padding-top: calc(30/320*100vw);
+        padding-bottom: calc(30/320*100vw);
+        border-radius: calc(10/320*100vw);
+    }
+
+    .qwiz-form-text {
+        margin-top: calc(15/320*100vw);
+    }
+
+    .profession-select-form {
+        padding-bottom: calc(40/320*100vw);
+    }
+
+    .qwiz .prof-list {
+        margin-left: calc(-22/320*100vw);
+        padding-left: calc(8/320*100vw);
+    }
+
+    .qwiz .profession {
+        margin-left: calc(22/320*100vw);
+        flex-basis: calc((100% - calc(44/320*100vw))/2);
+    }
+    // related to starting page
+    .qwiz-start-underlay {
+        top: calc(-130/320*100vw);
+        max-width: calc(320/320*100vw);
+        height: calc(100% + calc(130/320*100vw));
+    }
+
+    // related to QWIZ2,QWIZ3
+
+    .qwiz-form-list {
+        padding-top: calc(20/320*100vw);
+        padding-left: calc(50/320*100vw);
+    }
+
+    
+    .qwiz-option {
+        margin-top: calc(10/320*100vw);
+    }
+    .qwiz-option-label {
+        padding-left: calc(30/320*100vw);
+        &::before {
+            width: calc(24/320*100vw);
+            height: calc(24/320*100vw);
+        }
+        &::after {
+            left: calc(2/320*100vw);
+            top: calc(2/320*100vw);
+            width: calc(20/320*100vw);
+            height: calc(20/320*100vw);
+        }
+}
+
+    // related to QWIZ4
+    .qwiz4 .qwiz-form {
+        padding-left: calc(5/320*100vw);
+        padding-right: calc(5/320*100vw);
+        padding-bottom: calc(40/320*100vw);
+    }
+}
+
+
+
+
+@media screen and (min-width:1920px) {
+
+.qwiz {
+        padding-top: 90px;
+    }
+.qwiz-form {
+    padding-bottom: 60px;
+}
+
+.qwiz-form-title {
+    margin-top: 60px;
+    padding-left: 365px;
+    text-align: left;
+}
+
+.qwiz-form-text {
+    margin-top: 10px;
+    padding-left: 376px;
+    text-align: left;
+    font-size: var(--main-font-desktop);
+}
+// related to QWIZ1: 
+.qwiz-start {
+    padding-top:85px;
+    padding-bottom:95px;
+}
+.qwiz-start-underlay {
+    top:-89px;
+    max-width:1920px;
+    height: calc(100% + 89px);
+}
+.profession-select-form {
+    padding-bottom: 60px;
+    padding-left:25px;
+    padding-right:52px;
+}
+
+.qwiz-start .qwiz-form-title {
+    padding-left: 283px;
+}
+.qwiz-start .qwiz-form-text {
+    padding-left:421px;
+}
+
+.qwiz .prof-list {
+    margin-left:-25px;
+    padding-top: 30px;
+}
+
+.qwiz .profession {
+    margin-top: 30px;
+    margin-left: 25px;
+    flex-basis: calc((100% - 100px)/4);
+    flex-grow: 0.33;
+
+    &:nth-child(4n) {
+        max-width: 183px;
+    }
+}
+.qwiz-option-label {
+    padding-left:34px;
+}
+.qwiz-option-label::before {
+    top:calc(50%);
+    transform:translate(0, -50%);
+}
+
+.qwiz-option-label::after {
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.qwiz-option-selector:checked+.qwiz-option-label::after {
+    transform: translate(0, -50%) scale(0.5);
+}
+
+// related to QWIZ2,QWIZ3
+
+.qwiz-form-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-left: 128px;
+    padding-right: 230px;
+}
+
+.qwiz-option {
+    font-weight: var(--font-weight-semibold);
+}
+
+.qwiz-option:not(:first-child) {
+    margin-left: 25px;
+}
+
+// related to QWIZ3
+.qwiz3 .qwiz-form-title {
+    padding-left: 175px;
+}
+// related to QWIZ3, QWIZ4
+.qwiz3 .qwiz-form-text {
+    padding-left: 280px;
+}
+// Related to QWIZ4
+
+.qwiz4 .qwiz-form {
+    padding-left: 39px;
+    padding-right: 33px;
+    padding-bottom: 196px;
+}
+.qwiz4 .qwiz-form-title {
+    padding-left: 326px;
+}
+
+.qwiz4 .qwiz-form-text {
+    padding-left: 280px;
+}
+
+}

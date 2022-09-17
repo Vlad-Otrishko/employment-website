@@ -1,0 +1,42 @@
+    .qwiz-title {
+        padding-left: 24px;
+        padding-right: 24px;
+        text-align:center;
+    }
+
+    .qwiz-text {
+        margin-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media screen and(max-width: 1919px){
+    .qwiz-text {
+            text-align:center;
+        }
+    }
+    @media screen and(max-width: 319px){
+    .qwiz-title {
+            padding-left: calc(24/320*100vw);
+            padding-right: calc(24/320*100vw);
+        }
+    
+        .qwiz-text {
+            margin-top: calc(15/320*100vw);
+            padding-left: calc(10/320*100vw);
+            padding-right: calc(10/320*100vw);
+        }
+
+    }
+
+    @media screen and(min-width:1920px){
+    .qwiz-title {
+            padding-left: 110px;
+            text-align:left;
+        }
+    
+        .qwiz-text {
+            margin-top: 20px;
+            padding-left: 138px;
+        }
+    }

@@ -1,0 +1,49 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width:100%;
+  height:auto;
+}
+.reset-address {
+  font-style: normal;
+}
+.reset-list {
+  list-style: none;
+}
+.reset-link {
+  text-decoration: none;
+  color:var(--main-font-color);
+}
+body {
+  margin:0;
+  color: var(--main-font-color);
+  font-family: var(--main-font-family);
+  line-height:155%;
+}
+@media screen and (max-width:1919px) {
+body {
+    font-size: var(--main-font-mobile);
+  }
+}
+
+
+@media screen and (min-width:1920px) {
+body {
+    font-size: var(--main-font-desktop);
+  }
+}

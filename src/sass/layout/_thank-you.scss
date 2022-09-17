@@ -1,0 +1,39 @@
+.thank-you-container{
+    padding-top:30px;
+    padding-bottom:40px;
+    background-color: var(--lightest-grey-color);
+    background-image: radial-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .thank-you-title{
+text-align:center;
+white-space:pre-line;
+}
+.thank-you-text{
+    padding-left:4px;
+    margin-top:30px;
+}
+@media screen and (min-width:1920px){
+.thank-you-body .header {
+        & .remark {
+            margin-right: 649px;
+        }
+
+        & .header-wrapper {
+            max-width: 1160px;
+        }
+    }
+.thank-you-flex-wrapper {
+        display: flex;
+        margin-top: 90px;
+        padding-right: 50px;
+    }
+.thank-you .about-us-video-link{
+    flex-basis: 50%;
+    margin-right:38px;
+}
+.thank-you .about-company{
+    padding-top:53px;
+    flex-basis:calc(50% - 38px);
+}
+}

@@ -1,0 +1,57 @@
+    .note{
+    padding-bottom:16px;
+    }
+    .note-body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
+        background-color: var(--white-color);
+        box-shadow: var(--shadow);
+    }
+    .note-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .note-condition {
+        margin-top: 15px;
+        text-align: center;
+    }    
+        
+@media screen and (max-width:319px){
+    .note {
+            padding-bottom: calc(16/320*100vw);
+        }
+    
+    .note-body {
+        padding-top: calc(40/320*100vw);
+        padding-bottom: calc(40/320*100vw);
+    }
+    .note-condition {
+        margin-top: calc(15/320*100vw);
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .note-body {
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
+        .note-container {
+            padding: 0;
+        }
+        .note-title {
+        margin-left: auto;
+        margin-right: auto;
+        width: 760px;
+        text-align: center;
+        }
+    
+        .note-condition {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 331px;
+            text-align: center;
+        }
+    }

@@ -1,0 +1,31 @@
+.attention {
+    background-color: var(--yellow-color);
+    border-radius: 10px;
+
+    &-warning-mark {
+        margin: 0 auto;
+    }
+
+    &-text {
+        margin-top: 5px;
+        text-align: center;
+        line-height: 155%;
+    }
+}
+@media screen and (max-width:319){
+.attention {
+        border-radius: calc(10/320*100vw);
+
+        &-text {
+            margin-top:calc(5/320*100vw);
+        }
+    }
+}
+@media screen and(min-width:1920px) {
+.attention {
+        display: flex;
+        align-items: center;
+        font-size: var(--main-font-desktop);
+        line-height: 155%;
+    }
+}

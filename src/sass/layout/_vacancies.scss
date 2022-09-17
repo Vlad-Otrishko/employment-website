@@ -1,0 +1,104 @@
+.vacancies-container{
+    padding-top:24px;
+    padding-bottom:40px;
+    background-color: var(--lightest-grey-color);
+    background-image: radial-gradient(#FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+}
+.jobs-title {
+    width:100%;
+    white-space:nowrap;
+}
+.vacancies .profession {
+    padding-left: 32px;
+    background-image: url('../images/list_markers/job_marker.svg');
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    background-position: 0 0;
+}
+
+.vacancies-attention{
+    margin-top:35px;
+    padding: 30px 20px 30px 20px;
+    width:100%;
+}
+.vacancies-form-intro{
+    margin-top:25px;
+}
+.form-intro-title{
+    font-weight: var(--font-weight-semibold);
+    line-height:155%;
+    text-align:center;
+}
+.form-intro-text {
+    margin-top: 15px;
+    line-height: 155%;
+    text-align: center;
+    white-space: pre-line;
+}
+@media screen and (max-width:319px){
+.vacancies-container {
+    padding-top: calc(24/320*100vW);
+    padding-bottom: calc(40/320*100vw);
+    }
+.vacancies .profession {
+    padding-left: calc(32/320*100vw);
+    background-size: calc(22/320*100vw) calc(22/320*100vw);
+    }
+
+    .vacancies-attention {
+        height: calc(227/320*100vw);
+        margin-top: calc(35/320*100vw);
+        padding: calc(30/320*100vw) calc(20/320*100vw) calc(30/320*100vw) calc(20/320*100vw);
+    }
+    .attention-warning-mark{
+        width:calc(62/320*100vw);
+    }
+    .vacancies-form-intro {
+        margin-top: calc(25/320*100vw);
+    }
+
+    .form-intro-text {
+        margin-top: calc(15/320*100vw);
+    }
+}
+@media screen and (min-width:1920px){
+.vacancies-container {
+        padding-top: 74px;
+        padding-bottom: 123px;
+}
+
+.vacancies .prof-list {
+    margin-top: 23px;
+    padding-right: 68px;
+}
+
+.vacancies .profession {
+    margin-top: 30px;
+    margin-left: 21px;
+    flex-basis: calc((100% - 84px)/4);
+    flex-grow: 0.33;
+    padding-left: 37px;
+    background-size: 31px 33px;
+    &:nth-child(4n){
+        max-width:193px;
+    }
+}
+.vacancies-attention {
+    margin-top: 88px;
+    padding: 39px 33px 39px 0px;
+}
+.vacancies-form-intro {
+    margin-top: 60px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1085px;
+}
+.form-intro-text {
+    margin-top: 10px;
+    font-size: var(--main-font-desktop);
+    white-space: normal;
+}
+.vacancies .contact-form{
+    padding-bottom:123px;
+}
+}
