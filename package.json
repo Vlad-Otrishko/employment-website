@@ -6,7 +6,7 @@
   "homepage": "https://Vlad-Otrishko.github.io/employment-website",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/index.html --public-url /employment-website/",
+    "build": "parcel build src/*.html --public-url /employment-website/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
