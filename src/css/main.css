@@ -1095,9 +1095,19 @@ body {
     max-width: 223px;
   }
   .motivation {
+    position: relative;
     margin-left: 44px;
     margin-top: 85px;
     width: 345px;
+  }
+  .motivation::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: -41px;
+    height: 50px;
+    width: 50px;
+    background-image: url("../images/service_marks/curved-arrow.svg");
   }
   .hero-button {
     margin-top: 15px;
